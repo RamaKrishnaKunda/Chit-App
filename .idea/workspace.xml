@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15ad0dbd-f630-4c1c-9448-829ea10be127" name="Default" comment="" />
+    <list default="true" id="15ad0dbd-f630-4c1c-9448-829ea10be127" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.ebextensions/python.config" beforeDir="false" afterPath="$PROJECT_DIR$/.ebextensions/python.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chitfund/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/chitfund/settings.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +68,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chitfund/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1048">
-              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state relative-caret-position="289">
+              <caret line="92" selection-start-line="92" selection-end-line="92" />
             </state>
           </provider>
         </entry>
@@ -124,7 +127,6 @@
         <option value="$PROJECT_DIR$/chit_app/templates/logout.html" />
         <option value="$PROJECT_DIR$/chit_app/forms/auth.py" />
         <option value="$PROJECT_DIR$/chit_app/forms/__init__.py" />
-        <option value="$PROJECT_DIR$/chitfund/settings.py" />
         <option value="$PROJECT_DIR$/chit_app/models.py" />
         <option value="$PROJECT_DIR$/chit_app/templates/login.html" />
         <option value="$PROJECT_DIR$/chit_app/templates/signup.html" />
@@ -140,6 +142,7 @@
         <option value="$PROJECT_DIR$/chit_app/forms/chit.py" />
         <option value="$PROJECT_DIR$/chit_app/templates/chitlist.html" />
         <option value="$PROJECT_DIR$/chit_app/templates/viewpeople.html" />
+        <option value="$PROJECT_DIR$/chitfund/settings.py" />
       </list>
     </option>
   </component>
@@ -727,8 +730,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chitfund/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1048">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        <state relative-caret-position="289">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
         </state>
       </provider>
     </entry>
