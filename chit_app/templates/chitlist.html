@@ -1,0 +1,61 @@
+{% extends "_base.html" %}
+{%block content%}
+    {% if has_perm is True %}
+         <div class = 'container'>
+             <a href = '/chitapp/addchit'><button class = 'btn'>AddChit</button></a>
+            {%if chit_list%}
+                <table class = 'table table-striped table-hover'>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Month/Year</th>
+                            <th>Amount</th>
+                            <th>Options</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for chit in chit_list %}
+                            <tr>
+                                <td>{{chit.name}}</td>
+                                <td>{{chit.month}}/{{chit.year}}</td>
+                                <td>{{chit.amount}}</td>
+                                <td>
+                                    {%if chit.number_of_months > chit.people_present%}
+                                        <a href = '{{chit.id}}/addpeople'><button class = 'btn-success'>AddPeople</button></a>
+                                    {%endif%}
+                                    <a href = '{{chit.id}}/viewpeople'><button class = 'btn-success'>ViewPeople</button></a>
+                                    <a href = '{{chit.id}}/deletechit'><button class = 'btn-success'>Delete Chit</button></a></td>
+                            </tr>
+                        {% endfor%}
+                    </tbody>
+                </table>
+            {%else%}
+                <p><h2 align="center">Create a chit to get started</h2></p>
+            {%endif%}
+         </div>
+    {%else%}
+        {%if chit_list%}
+            <div class = 'container'>
+                <table class = "table table-stripped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Month/Year</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for chit in chit_list %}
+                            <tr>
+                                <td><a href = '{{chit.chit__id}}'>{{chit.chit__month}}/{{chit.chit__year}}</a></td>
+                                <td>{{chit.chit__amount}}</td>
+                            </tr>
+                        {%endfor%}
+                    </tbody>
+                </table>
+            </div>
+        {%else%}
+            <p><h2 align="center">No chits to show</h2></p>
+            <p align="center">Contact the admin to add you to a chit</p>
+        {%endif%}
+    {%endif%}
+{%endblock%}

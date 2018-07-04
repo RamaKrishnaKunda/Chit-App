@@ -1,0 +1,37 @@
+{% extends "_base.html" %}
+{% block content %}
+    <div class = 'container'>
+        <a href = '/chitapp/chitlist'><button class = 'btn'>Back</button></a>
+        {%if users%}
+            <a href = 'remove_requests'><button class = 'btn'>Remove requests</button></a>
+            <table class = 'table table-hover'>
+                <thead>
+                    <th>Name</th>
+                    <th>Lifted</th>
+                    <th>Requests</th>
+                </thead>
+                <tbody>
+                    {% for user in users %}
+                        <tr>
+                            <td>{{user.user__first_name}}{{user.user__last_name}}</td>
+                            {%if user.lifted %}
+                                <td>Lifted</td>
+                            {%else%}
+                                <td>Not Lifted</td>
+                            {%endif%}
+                            {%if user.lift_request == 0%}
+                                <td></td>
+                            {%elif user.lift_request == 1%}
+                                <td><a href = '{{user.id}}'><button class = 'btn'>Confirm</button></a></td>
+                            {%elif user.lift_request == 2%}
+                                <td><button class = 'btn' disabled>Granted</button></td>
+                            {%endif%}
+                        </tr>
+                    {%endfor%}
+                </tbody>
+            </table>
+        {%else%}
+            <p><h2 align="center">Add people to view</h2></p>
+        {%endif%}
+    </div>
+{%endblock%}

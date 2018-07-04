@@ -1,0 +1,36 @@
+{% extends "_base.html" %}
+{% load mathfilters %}
+{% block content %}
+    {%if chitlist is not None%}
+        <a href = '/chitapp/chitlist'><button class = 'btn'>Back</button></a>
+        <table class = 'table table-striped table-hover'>
+            <thead>
+                <th>Lifted</th>
+                <th>Amount to be paid</th>
+                <th>Request to lift Chit</th>
+            </thead>
+            <tbody>
+                {%for chit in chitlist%}
+                    <tr>
+                        {%if chit.lifted %}
+                            <td>Lifted</td>
+                            <td>{{chit.amount}}</td>
+                        {%else%}
+                            <td>Not Lifted</td>
+                            <td>{{chit.amount}}</td>
+                        {%endif%}
+                        {%if chit.lift_request == 0%}
+                            <td><a href = '/chitapp/chitlist/{{chitid}}/{{chit.id}}/request'><button class = 'btn'>Request</button></a></td>
+                        {%elif chit.lift_request == 1%}
+                            <td><button class = 'btn' disabled>Placed Request</button></td>
+                        {%elif chit.lift_request == 2%}
+                            <td><button class = 'btn' disabled>Granted</button></td>
+                        {%endif%}
+                    </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    {%else%}
+        <h2>Page Not Found</h2>
+    {%endif%}
+{% endblock %}
