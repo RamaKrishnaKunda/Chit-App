@@ -11,15 +11,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="addchit_form.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chit_app/templates/addchit_form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="addpeopletemplate.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chit_app/templates/addpeopletemplate.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -56,11 +47,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chitfund/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+            <state relative-caret-position="17">
+              <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createsu.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chit_app/management/commands/createsu.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#65#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,8 +109,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -142,6 +145,7 @@
         <option value="$PROJECT_DIR$/chit_app/templates/viewuserchits.html" />
         <option value="$PROJECT_DIR$/chit_app/templates/chitlist.html" />
         <option value="$PROJECT_DIR$/chitfund/settings.py" />
+        <option value="$PROJECT_DIR$/chit_app/management/commands/createsu.py" />
       </list>
     </option>
   </component>
@@ -174,30 +178,24 @@
               <item name="chitfund" type="b2602c69:ProjectViewProjectNode" />
               <item name="chitfund" type="462c0819:PsiDirectoryNode" />
               <item name="chit_app" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chitfund" type="b2602c69:ProjectViewProjectNode" />
               <item name="chitfund" type="462c0819:PsiDirectoryNode" />
               <item name="chit_app" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chitfund" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chitfund" type="462c0819:PsiDirectoryNode" />
-              <item name="chit_app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chitfund" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chitfund" type="462c0819:PsiDirectoryNode" />
-              <item name="chit_app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chitfund" type="b2602c69:ProjectViewProjectNode" />
               <item name="chitfund" type="462c0819:PsiDirectoryNode" />
               <item name="chitfund" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chitfund" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chitfund" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -270,17 +268,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20499243" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21860817" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="right" id="Python Console" order="3" weight="0.41452345" />
+      <window_info active="true" anchor="right" id="Python Console" order="3" visible="true" weight="0.2549168" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.329582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.28617364" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.28617364" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39871383" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -318,7 +316,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chit_app/views/chit_views.py</url>
+          <url />
           <line>14</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -344,16 +342,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chit_app/views/chit_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chit_app/views/auth.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -721,8 +709,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chitfund/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        <state relative-caret-position="17">
+          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chit_app/management/commands/createsu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
