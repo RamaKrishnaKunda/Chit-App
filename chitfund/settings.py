@@ -25,7 +25,7 @@ SECRET_KEY = 'bz9#876$xhb&lsg4+-5$ou90+5%pz$4br2i9f$wq060vrwji*='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['my-eb-site-dev.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['chitfund-dev.ap-south-1.elasticbeanstalk.com']
 
 
 # Application definition
