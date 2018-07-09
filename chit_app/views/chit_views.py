@@ -142,4 +142,7 @@ def RemoveRequests(request, **kwargs):
     return redirect('chit_app:viewpeople', **{'chit_id': kwargs['chit_id']})
 
 def First_page_view(request):
+    user = request.user
+    if user.is_authenticated:
+        return redirect('chit_app:chitlist')
     return render(request = request, template_name='_base.html', context = {'firstpage': True})
