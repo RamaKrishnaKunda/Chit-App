@@ -7,7 +7,7 @@ from chit_app.forms import *
 from django.shortcuts import redirect, render
 
 class ChitList(LoginRequiredMixin, ListView):
-    login_url = '/login'
+    login_url = '/chitapp/login'
     model = Chit
     template_name = 'chitlist.html'
 
@@ -24,7 +24,7 @@ class ChitList(LoginRequiredMixin, ListView):
         return context
 
 class AddChit(LoginRequiredMixin, CreateView):
-    login_url = '/login'
+    login_url = '/chitapp/login'
     template_name = 'addchit_form.html'
     form_class = AddChitForm
     model = Chit
@@ -78,7 +78,7 @@ class AddPeople(LoginRequiredMixin, View):
                 return redirect('chit_app:chitlist')
 
 class ViewPeople(LoginRequiredMixin, ListView):
-    login_url = '/login'
+    login_url = '/chitapp/login'
     model = User
     template_name = 'viewpeople.html'
 
@@ -88,13 +88,13 @@ class ViewPeople(LoginRequiredMixin, ListView):
         return context
 
 class DeleteChit(LoginRequiredMixin, DeleteView):
-    login_url = '/login'
+    login_url = '/chitapp/login'
     model = Chit
     template_name = 'chit_delete.html'
     success_url = urls.reverse_lazy('chit_app:chitlist')
 
 class ViewUserChits(LoginRequiredMixin, ListView):
-    login_url = '/login'
+    login_url = '/chitapp/login'
     model = Chit
     template_name = 'viewuserchits.html'
 
@@ -108,7 +108,7 @@ class ViewUserChits(LoginRequiredMixin, ListView):
         return context
 
 class RequestLift(LoginRequiredMixin, View):
-    login_url = '/login'
+    login_url = '/chitapp/login'
 
     def get(self, request, **kwargs):
         user = request.user
@@ -118,7 +118,7 @@ class RequestLift(LoginRequiredMixin, View):
         return redirect('chit_app:userchitview', **{'chit_id': self.kwargs['chit_id']})
 
 class ConfirmLift(LoginRequiredMixin, View):
-    login_url = '/login'
+    login_url = '/chitapp/login'
     def get(self, request, **kwargs):
         user = request.user
         lift_obj = Lifted.objects.get(id=kwargs['lifted_id'])
