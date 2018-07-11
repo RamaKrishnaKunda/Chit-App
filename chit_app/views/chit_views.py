@@ -62,13 +62,12 @@ class AddPeople(LoginRequiredMixin, View):
                 return render(request=request, template_name='addpeopletemplate.html', context={'form':form, 'UserPresent': True, 'ChitsAvaiable' : False})
             try:
                 user = User.objects.get(username = username)
+                chit_obj.user.add(user)
             except User.DoesNotExist:
                 return render(request=request, template_name='addpeopletemplate.html', context={'form':form, 'UserPresent': False, 'ChitsAvaiable' : True})
             for iter in range(number_of_chits):
                 lifted_obj = Lifted(user = user, chit = chit_obj)
                 lifted_obj.amount = chit_obj.amount // chit_obj.number_of_months
-                # import ipdb
-                # ipdb.set_trace()
                 lifted_obj.save()
                 chit_obj.people_present += 1
             chit_obj.save()

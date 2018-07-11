@@ -17,4 +17,6 @@ urlpatterns = [
     path('chitlist/<int:chit_id>/viewpeople/', ViewPeople.as_view(), name = 'viewpeople'),
     path('chitlist/<int:chit_id>/viewpeople/<int:lifted_id>', ConfirmLift.as_view(), name = 'confirmlift'),
     path('chitlist/<int:chit_id>/viewpeople/remove_requests', RemoveRequests, name = 'remove_requests'),
+
+    path('api/chitlist/', ChitListRestView.as_view(), name = 'apiuserchit'),
 ]

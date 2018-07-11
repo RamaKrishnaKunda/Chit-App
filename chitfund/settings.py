@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'chit_app.apps.ChitAppConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
